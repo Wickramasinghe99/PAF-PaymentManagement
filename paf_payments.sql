@@ -23,10 +23,10 @@ DROP TABLE IF EXISTS `payments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `payments` (
-  `paymentID` varchar(20) NOT NULL,
-  `paymentDate` varchar(50) DEFAULT NULL,
-  `paymentTime` varchar(50) DEFAULT NULL,
-  `paymentAmount` varchar(50) DEFAULT NULL,
+  `paymentID` int(10) NOT NULL,
+  `paymentDate` varchar(10) DEFAULT NULL,
+  `paymentTime` varchar(10) DEFAULT NULL,
+  `paymentAmount` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`paymentID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
